@@ -2,7 +2,7 @@
 
 **Cross-platform system recon tool**
 
-Pulls **system, user, network, process, SSH keys, and drive info**. Perfect for building next-level tools or just exploring your own environment like a **pro hacker**.
+Pulls **system, user, network, process, SSH keys, and drive info**. Perfect for building next-level tools or just exploring your own environment like a **pro chefar**.
 
 ## **Features**
 
