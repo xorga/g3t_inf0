@@ -1,6 +1,6 @@
 NAME = inf0
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror -g
+CFLAGS = -g
 SRC_FOLDER = 0x_srcs
 SRCS = $(wildcard $(SRC_FOLDER)/*.c)
 OBJS = $(SRCS:.c=.o)
