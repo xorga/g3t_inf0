@@ -1,0 +1,9 @@
+{
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "sysctl.h": "c",
+        "utsname.h": "c",
+        "pwd.h": "c",
+        "string.h": "c"
+    }
+}
