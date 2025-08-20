@@ -14,6 +14,7 @@ Pulls **system, user, network, process, and drive info**. Perfect for building n
 - **Mounted drives**  
 - **SSH keys dump**  
 
+Results are hidden under the ~/.dumps folder , it will be changed into a remote server after.
 ## **Usage**
 
 ```bash
