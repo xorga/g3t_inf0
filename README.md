@@ -22,7 +22,7 @@ https://github.com/xorga/g3t_inf0/
 cd inf0
 make
 ./inf0
-cd ./dumps
+cd .dumps/
 ```
 # Disclaimer
 
