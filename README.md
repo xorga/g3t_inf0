@@ -18,7 +18,8 @@ Results are hidden under the ~/.dumps folder , it will be changed into a remote 
 ## **Usage**
 
 ```bash
-https://github.com/xorga/g3t_inf0/cd inf0
+https://github.com/xorga/g3t_inf0/
+cd inf0
 make
 ./inf0
 cd ./dumps
