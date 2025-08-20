@@ -1,4 +1,4 @@
-#include "0x_includes/glob.h"
+#include "../0x_includes/glob.h"
 
 void basic_system_info(void) {
     ensure_dump_folder();
