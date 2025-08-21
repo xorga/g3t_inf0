@@ -14,11 +14,11 @@
 #include <sys/utsname.h>
 #include <stdint.h>
 #include <errno.h>
+#include <netdb.h>
 #ifdef __APPLE__
 #include <sys/sysctl.h>
 #include <ifaddrs.h>
 #include <net/if.h>
-#include <netdb.h>
 #include <arpa/inet.h>
 #elif __linux__
 #include <dirent.h>
