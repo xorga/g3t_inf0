@@ -4,6 +4,8 @@
         "sysctl.h": "c",
         "utsname.h": "c",
         "pwd.h": "c",
-        "string.h": "c"
+        "string.h": "c",
+        "memory": "c",
+        "utility": "c"
     }
 }

