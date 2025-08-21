@@ -1,0 +1,7 @@
+{
+  "Sysname": "Darwin",
+  "Node": "e3r3p13.1337.ma",
+  "Release": "19.6.0",
+  "Version": "Darwin Kernel Version 19.6.0: Tue Jun 21 21:18:39 PDT 2022; root:xnu-6153.141.66~1/RELEASE_X86_64",
+  "Machine": "x86_64"
+}
