@@ -1,1 +1,0 @@
-{ "Cores": 12, "Model": "Intel(R) Core(TM) i5-10600 CPU @ 3.30GHz" }
