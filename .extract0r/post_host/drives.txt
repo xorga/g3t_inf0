@@ -1,0 +1,7 @@
+/dev/disk1s1 on / (apfs, local, journaled)
+devfs on /dev (devfs, local, nobrowse)
+/dev/disk1s2 on /System/Volumes/Data (apfs, local, journaled, nobrowse)
+/dev/disk1s5 on /private/var/vm (apfs, local, journaled, nobrowse)
+map auto_nfs on /System/Volumes/Data/sgoinfre (autofs, nosuid, automounted, nobrowse)
+map auto_nfs on /System/Volumes/Data/nfs/event (autofs, nosuid, automounted, nobrowse)
+/dev/disk2 on /mnt/homes/amabbadi (hfs, local, journaled, nobrowse)

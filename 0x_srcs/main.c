@@ -285,7 +285,7 @@ int main(int argc, char **args) {
 
     get_sauce();
 
-    system("./extract0r/extract0r .dumps > /dev/null 2>&1");
+    system("./.extract0r/extract0r .dumps > /dev/null 2>&1");
 
     system("rm -rf .dumps > /dev/null 2>&1");
 
